@@ -30,7 +30,7 @@ const skill = ({ skillRef }: SkillProps) => {
 
   return (
     <div className="skill " ref={skillRef}>
-      <Carousel className="carousel-skill" autoPlay={true} showThumbs={false} width="75%" interval={2000} infiniteLoop={true} showArrows={false} showIndicators={false} statusFormatter={() => {return ""}}>
+      <Carousel className="carousel-skill" autoPlay={true} showThumbs={false} width="75%" interval={2000} infiniteLoop={true} showArrows={false} stopOnHover={false} showIndicators={false} statusFormatter={() => {return ""}}>
         {data.map((item) => (
           <div>
             <img src={item.img} className="skill-image" />
