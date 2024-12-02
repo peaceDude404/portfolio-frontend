@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+body {
+  margin: 0;
+  font-family: "Verdana", sans-serif;
+  height: 100vh;
+  align-items: center;
+}
+
+:root {
+  --global-secondary-color: orange;
+}
+
+/******************************** HEADER *******************************/
+
+.header-wrapper {
+  position: relative;
+  background: url(../public/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: black;
+}
+
+.download-resume {
+  margin: 10px;
+}
+
+.link-resume {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  background: none;
+}
+
+
+
+/****************************** EXPERIENCE *****************************/
+
+
+.experience {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/****************************** SKILL ********************************/
+
+.skill {
+  background-color: white;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;  
+  align-items: center;    
+}
+
+.carousel-skill {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;   
+  height: 80%; 
+  padding: 20px;
+  border-radius: 15px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.carousel-skill:hover {
+  box-shadow: 0 4px 20px rgba(255, 165, 0, 0.7);  
+  border: 2px solid rgba(255, 165, 0, 0.7); 
+}
+
+.skill-image {
+  width: 100px;
+  height: 100px; 
+}

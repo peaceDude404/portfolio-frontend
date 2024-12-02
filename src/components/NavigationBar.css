@@ -1,0 +1,38 @@
+.navbar {
+    position: sticky; 
+    top: 0;
+    left: 0;
+    width: 100%;  
+    padding: 10px 0;
+    z-index: 1000;
+    color: white;
+}
+
+.navbar-nav {
+  line-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar-nav {
+    line-height: 60px;
+  }
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item .nav-link:focus,
+.navbar-nav .nav-item .nav-link.active {
+  color: var(--global-secondary-color); 
+  border-color: var(--global-secondary-color); 
+}
+
+
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
