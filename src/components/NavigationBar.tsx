@@ -5,9 +5,10 @@ interface NavigationBarProps {
     onPressExperience: () => void;
     onPressHeader: () => void;
     onPressSkill: () => void;
+    onPressContact: () => void;
 }
 
-const NavigationBar = ({onPressExperience, onPressHeader, onPressSkill} : NavigationBarProps) => {
+const NavigationBar = ({onPressExperience, onPressHeader, onPressSkill, onPressContact} : NavigationBarProps) => {
 
   
 
@@ -45,14 +46,9 @@ const NavigationBar = ({onPressExperience, onPressHeader, onPressSkill} : Naviga
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Education
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+              <Link className="nav-link" onClick={onPressContact} to="/experience">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
