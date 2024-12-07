@@ -36,13 +36,13 @@ const NavigationBar = ({onPressExperience, onPressHeader, onPressSkill, onPressC
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" onClick={onPressSkill} to="/skill">
-                  Skills
+                <Link className="nav-link" onClick={onPressExperience} to="/experience">
+                  Experience
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" onClick={onPressExperience} to="/experience">
-                  Experience
+                <Link className="nav-link" onClick={onPressSkill} to="/skill">
+                  Skills
                 </Link>
               </li>
               <li className="nav-item">
